@@ -1,0 +1,376 @@
+/* Postpage.css */
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button + button {
+  margin-left: 10px;
+}
+/* Post.css */
+main {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+p + p {
+  margin-top: 10px; /* Add some space between paragraphs */
+}
+
+main:hover {
+  background-color: #f1f1f1; /* Subtle background change on hover */
+}
+/* Nav.css */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+form {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #007BFF;  /* Change color on hover */
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  li {
+    margin: 0;
+  }
+}
+/* Post.css */
+.post-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post-title h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.post-card p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* Newpost.css */
+
+.newpost-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.newpost-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newpost-input,
+.newpost-textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.newpost-input:focus,
+.newpost-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.newpost-textarea {
+  min-height: 150px;
+}
+
+.newpost-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newpost-submit:hover {
+  background-color: #0056b3;
+}
+
+.newpost-submit:active {
+  background-color: #00408b;
+}
+
+/* Recent.css */
+
+/* Container to center the list and add padding */
+.recent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.recent-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for each item */
+.recent-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recent-item h1 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Ensure the list has no default styling */
+.recent-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* Header.css */
+
+/* Header Styling */
+.header {
+  background-color: #49213d; /* Blue background color */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #49213d; /* Darker blue border for emphasis */
+}
+
+.header-title {
+  color: white;
+  font-size: 36px; /* Larger font size */
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Font for the header */
+  font-weight: bold;
+}
+/* Editpost.css */
+
+/* Container for the EditPost form */
+.editpost-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Style for the form */
+.editpost-form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for the title input field */
+.editpost-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.editpost-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the body textarea */
+.editpost-textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  min-height: 150px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.editpost-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.editpost-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editpost-submit:hover {
+  background-color: #0056b3;
+}
+
+.editpost-submit:active {
+  background-color: #00408b;
+}
